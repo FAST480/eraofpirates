@@ -226,5 +226,32 @@ body {
   margin-bottom: 15px;
 }
 .roadmap {
-  background-color: #5F2728;
+  background: url(../img/bgFourth1.jpg) bottom / cover no-repeat;
+}
+.roadmap__title h3 {
+  left: 43.8%;
+}
+.roadmap__offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.roadmap__item {
+  flex: 0 0 19.5%;
+}
+.roadmap__item-icon img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.roadmap__item-headline {
+  text-align: center;
+  font-family: "Excellent", serif;
+  color: #fff;
+  font-size: 32px;
+}
+.roadmap__item-list {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4rem;
 }
