@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_GbQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_N_XXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Excellent";
+  src: url("../fonts/ExcellentDisplayFontBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: initial;
+}
+body {
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.wrapper {
+  min-height: 100vh;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  background: url(../img/bgMain.jpeg) center / cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.header__body {
+  width: 100%;
+  height: 100%;
+}
+.nav {
+  position: fixed;
+  background: linear-gradient(90.24deg, #4E1C21 15.87%, #652B27 79.95%);
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px 0;
+  z-index: 5;
+}
+.menulist {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.menulist li {
+  margin-right: 30px;
+}
+.menulist li:last-child {
+  margin-right: 0;
+}
+.menulist li a {
+  position: relative;
+  color: #fff;
+  font-family: "Excellent", serif;
+  text-decoration: none;
+  font-size: 28px;
+}
+.menulist li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -5px;
+  right: 0;
+  transition: 0.5s;
+}
+.menulist li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.offer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 30px 0;
+}
+.offer__logo {
+  margin-top: 6%;
+  margin-left: -12%;
+}
+.offer__logo img {
+  width: 100%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+.button__arrow {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #4F1D22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.button__arrow:hover {
+  box-shadow: 0px 2px 5px 2px #7A3D43;
+}
+.about {
+  background: url(../img/bgSec.jpg) center / cover no-repeat;
+  padding-bottom: 100px;
+}
+.section__title {
+  text-align: center;
+  position: relative;
+}
+.section__title img {
+  margin-left: 85px;
+  margin-top: -30px;
+  width: 400px;
+}
+.section__title h3 {
+  position: absolute;
+  top: 49%;
+  left: 46.5%;
+  font-family: "Excellent", serif;
+  color: #fff;
+  font-size: 42px;
+}
+.about__offer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.arrow__item {
+  background-image: url(../img/paper.png);
+  background-repeat: no-repeat;
+  height: 500px;
+  flex: 0 0 33.33%;
+}
+.arrow__item-text {
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+  padding: 0px 20px 0px 25px;
+  color: #EAEAEA;
+  margin-top: 25%;
+  font-size: 18px;
+}
+.gameplay {
+  background: url(../img/bgThird.jpg) center / cover no-repeat;
+}
+.gameplay__title h3 {
+  left: 43.8%;
+}
+.gameplay__offer {
+  padding: 100px 0 ;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.gameplay__item {
+  padding: 30px;
+  background-color: #C4976B;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px #D5A574;
+}
+.gameplay__item-icon {
+  flex: 0 0 20%;
+  margin-right: 25px;
+}
+.gameplay__item-icon img {
+  width: 100%;
+}
+.gameplay__item-text h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.roadmap {
+  background-color: #5F2728;
+}
