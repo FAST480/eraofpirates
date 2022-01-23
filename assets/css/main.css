@@ -255,3 +255,35 @@ body {
   font-size: 18px;
   line-height: 1.4rem;
 }
+.team {
+  background: url(../img/bgFifth.jpg) bottom / cover no-repeat;
+}
+.team__offer {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 19%;
+}
+.team__item-icon img {
+  width: 100%;
+}
+.team__item-text {
+  text-align: center;
+  margin-top: 25px;
+}
+.team__item-name {
+  font-size: 36px;
+  color: #fff;
+}
+.team__item-des {
+  font-size: 18px;
+  color: #EAEAEA;
+}
+.collab__title h3 {
+  left: 44.2%;
+}
